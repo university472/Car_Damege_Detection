@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+data/uploads/
+data/artifacts/
+
+# Model weights: only the two used by the app are committed (needed for the Railway build).
+# Keep the GitHub repository PRIVATE.
+models/*.pt
+!models/car_parts.pt
+!models/car_damage.pt
+
+# Old backups / bundles not needed for deployment
+*.zip
+*.backup
+*.bak

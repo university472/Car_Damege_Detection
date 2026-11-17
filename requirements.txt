@@ -1,0 +1,10 @@
+ultralytics==8.4.182
+opencv-python-headless>=4.9,<5
+numpy>=1.26,<3
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.9
+# ByteTrack matching needs lap; ultralytics would otherwise try to auto-install it at runtime.
+lap>=0.5.12
+
+python-dotenv>=1.0
